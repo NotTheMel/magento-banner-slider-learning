@@ -14,18 +14,18 @@ Magento 2 Banner Slider using REST API & GraphQL
 
 Before you begin, make sure all these files are in proper order
  
-        :open_file_folder: code
-            :open_file_folder: Mel
-                :open_file_folder: BannerSlider
-                    :open_file_folder: Api
-                        :open_file_folder: Data
+        --code
+            --Mel
+                --BannerSlider
+                    --Api
+                        --Data
                             BannerApiInterface.php
                             BannerInterface.php
                             BannerSearchResultsInterface.php
                             SliderInterface.php
                         BannerRespositoryInterface.php
                         SlderRepositoryInterface.php
-                    :open_file_folder: Block
+                    --Block
                         --Widget
                             Slider.php
                     --Controller
