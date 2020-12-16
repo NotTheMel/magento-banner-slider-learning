@@ -1,19 +1,11 @@
 {
-    "name": "Mel/BannerSlider",
+    "name": "mel/banner-slider",
     "version": "1.0.0",
     "description": "BannerSlider Module",
     "type": "magento2-module",
     "require": {
         "magento/framework": "*",
         "php": "~7.2.0||~7.3.0",
-        "magento/module-catalog": "103.0.*",
-        "magento/module-config": "101.1.*",
-        "magento/module-directory": "100.3.*",
-        "magento/module-quote": "101.1.*",
-        "magento/module-sales": "102.0.*",
-        "magento/module-sales-rule": "101.1.*",
-        "magento/module-shipping": "100.3.*",
-        "magento/module-store": "101.0.*"
     },
     "license": [
         "Open SOftware License (OSL)"
