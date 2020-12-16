@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:helloworld:Magento_Widget:etc/widget.xsd">
+    <widget class="Mel\BannerSlider\Block\Widget\Slider" id="mel-slider-widget">
+        <label>Slider</label>
+        <description>Banner Slider</description>
+        <parameters>
+            <parameter name="slider_select" xsi:type="select" visible="true"
+                       source_model="Mel\BannerSlider\Model\Widget\Slider">
+                <label translate="true">Select Slider</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

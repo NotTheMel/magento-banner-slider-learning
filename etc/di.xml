@@ -1,0 +1,17 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="Mel\BannerSlider\Api\SliderRepositoryInterface"
+                type="Mel\BannerSlider\Model\SliderRepository"/>
+
+    <preference for="Mel\BannerSlider\Api\Data\SliderInterface"
+                type="Mel\BannerSlider\Model\Data\SliderApi"/>
+
+    <preference for="Mel\BannerSlider\Api\BannerRepositoryInterface"
+                type="Mel\BannerSlider\Model\BannerRepository"/>
+
+    <preference for="Mel\BannerSlider\Api\Data\BannerInterface"
+                type="Mel\BannerSlider\Model\Data\BannerApi"/>
+
+    <preference for="Mel\BannerSlider\Api\Data\BannerApiInterface"
+                type="Mel\BannerSlider\Model\Data\Api\Banner"/>
+</config>

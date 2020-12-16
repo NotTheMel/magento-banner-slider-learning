@@ -1,0 +1,12 @@
+<?php
+/**
+ * @var $block \Mel\BannerSlider\Block\Widget\Slider
+ */
+$sliderId = $this->getData('slider_select');
+$slider = $block->getSlider();
+?>
+<div id="slider_id" style="display: none"><?=$sliderId ?></div>
+<div id="loading" style="display: none">Loading slider..</div>
+<div id="slider-api" class="owl-carousel"></div>
+
+<!--<div id="slider-api-graphql" class="owl-carousel-graphql"></div>-->

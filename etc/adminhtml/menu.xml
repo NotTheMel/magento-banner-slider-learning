@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Mel_BannerSlider::slider" title="BannerSlider" translate="title" module="Mel_BannerSlider" sortOrder="30" resource="Mel_BannerSlider::slider"/>
+
+        <add id="Mel_BannerSlider::view" title="Banners" translate="title" module="Mel_BannerSlider" action="slider/view/index" sortOrder="10" parent="Mel_BannerSlider::slider" resource="Mel_BannerSlider::view"/>
+        <add id="Mel_BannerSlider::slides" title="Sliders" translate="title" module="Mel_BannerSlider" action="slider/view/sliders" sortOrder="10" parent="Mel_BannerSlider::slider" resource="Mel_BannerSlider::slides"/>
+
+<!--        <add id="Mel_BannerSlider::addSlider" title="Add Sliders" translate="title" module="Mel_BannerSlider" action="slider/add/slider" sortOrder="10" parent="Mel_BannerSlider::slider" resource="Mel_BannerSlider::addSlider"/>-->
+
+<!--        <add id="Mel_BannerSlider::add" title="Add Banners" translate="title" module="Mel_BannerSlider" action="slider/add/index" sortOrder="10" parent="Mel_BannerSlider::slider" resource="Mel_BannerSlider::add"/>-->
+    </menu>
+</config>

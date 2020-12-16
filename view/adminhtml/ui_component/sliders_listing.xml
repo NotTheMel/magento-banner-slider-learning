@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <argument name="data" xsi:type="array">
+        <item name="js_config" xsi:type="array">
+            <item name="provider" xsi:type="string">sliders_listing.sliders_listing_data_source</item>
+        </item>
+        <!--/The button on the top of the Grid start-->
+        <item name="buttons" xsi:type="array">
+            <item name="view_sliders" xsi:type="array">
+                <item name="name" xsi:type="string">add</item>
+                <item name="label" xsi:type="string" translate="true">View Banners</item>
+                <item name="class" xsi:type="string">secondary</item>
+                <item name="url" xsi:type="string">slider/view/index</item>
+            </item>
+            <item name="add_banner" xsi:type="array">
+                <item name="name" xsi:type="string">add</item>
+                <item name="label" xsi:type="string" translate="true">Add New Banner</item>
+                <item name="class" xsi:type="string">primary</item>
+                <item name="url" xsi:type="string">slider/add/index</item>
+            </item>
+            <item name="add_slider" xsi:type="array">
+                <item name="name" xsi:type="string">add</item>
+                <item name="label" xsi:type="string" translate="true">Add New Slider</item>
+                <item name="class" xsi:type="string">primary</item>
+                <item name="url" xsi:type="string">slider/add/slider</item>
+            </item>
+        </item>
+        <!--/The button on the top of the Grid end-->
+    </argument>
+    <settings>
+        <spinner>cms_block_columns</spinner>
+        <deps>
+            <dep>sliders_listing.sliders_listing_data_source</dep>
+        </deps>
+    </settings>
+    <dataSource name="sliders_listing_data_source" component="Magento_Ui/js/grid/provider">
+        <settings>
+            <storageConfig>
+                <param name="indexField" xsi:type="string">slider_id</param>
+            </storageConfig>
+            <updateUrl path="mui/index/render"/>
+        </settings>
+
+        <dataProvider class="Mel\BannerSlider\Ui\Component\Slider\DataProvider" name="sliders_listing_data_source">
+            <settings>
+                <requestFieldName>slider_id</requestFieldName>
+                <primaryFieldName>slider_id</primaryFieldName>
+            </settings>
+        </dataProvider>
+    </dataSource>
+    <columns name="cms_block_columns">
+        <column name="slider_id">
+            <settings>
+                <filter>textRange</filter>
+                <label translate="true">ID</label>
+                <sorting>asc</sorting>
+            </settings>
+        </column>
+        <column name="name">
+            <settings>
+                <filter>text</filter>
+                <label translate="true">Slider Name</label>
+            </settings>
+        </column>
+
+        <actionsColumn name="actions" class="Mel\BannerSlider\Ui\Component\Listing\SliderAction">
+            <settings>
+                <label translate="true">Actions</label>
+            </settings>
+        </actionsColumn>
+    </columns>
+</listing>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <script src="Mel_BannerSlider::js/jquery.min.js"/>
+        <script src="Mel_BannerSlider::js/owl.carousel.js"/>
+        <script src="Mel_BannerSlider::js/jquery.bxslider.js"/>
+
+        <script src="Mel_BannerSlider::js/melslider.js"/>
+
+        <css src="Mel_BannerSlider::css/owl.carousel.css"/>
+        <css src="Mel_BannerSlider::css/jquery.bxslider.css"/>
+    </head>
+</page>

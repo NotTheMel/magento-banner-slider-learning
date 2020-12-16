@@ -1,0 +1,28 @@
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="slider_table" resource="default" engine="innodb" comment="Slider for Banner Images Table">
+
+        <column xsi:type="int" name="slider_id" unsigned="true" nullable="false" identity="true" comment="Id"/>
+        <column xsi:type="varchar" name="name"  nullable="true" comment="Slider Name"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="slider_id"/>
+        </constraint>
+
+    </table>
+
+    <table name="banner_table" resource="default" engine="innodb" comment="Banner Images Table">
+        <column xsi:type="int" name="banner_id" unsigned="true" nullable="false" identity="true" comment="Id"/>
+        <column xsi:type="int" name="slider_id" unsigned="true" nullable="false" comment="Slider Id"/>
+        <column xsi:type="varchar" name="image" nullable="true" length="255" comment="Image path"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="banner_id"/>
+        </constraint>
+
+        <constraint xsi:type="foreign" referenceId="BANNER_BANNER_ID_SLIDER_BANNER_ID"
+                    table="banner_table" column="slider_id"
+                    referenceTable="slider_table" referenceColumn="slider_id"/>
+
+    </table>
+</schema>

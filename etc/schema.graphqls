@@ -1,0 +1,19 @@
+type Query {
+    sliders(
+        slider_id: Int @doc(description: "Slider Id")
+    ): Slider
+    @resolver(class:"Mel\\BannerSlider\\Model\\Resolver\\Sliders")
+    @doc(description: "Slider will return all the corresponding banners")
+    @cache(cacheable: false)
+}
+
+type Slider @doc(description: "Slider") {
+#    banner_id: Int
+#    image: [String]
+    banners: [Banner] @doc(description: "Retrives all the banners")
+}
+
+type Banner {
+    banner_id: Int
+    image: String
+}
