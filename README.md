@@ -2,18 +2,18 @@
 
 Magento 2 Banner Slider using REST API & GraphQL
 
-#Documentation (Not finished)
+# Documentation (Not finished)
 
-#INTRODUCTION
+# INTRODUCTION
  This project helps adds a banner slider to home page of your magento 2
  application. ALl the required data such as slider info's and images
  comes from back-end using either REST API or GraphQL. (Will explain how to use any one of them)
  Thanks to Owl Carousel js plugin to make slider much easier to use.
  
-#HOW TO :
-Before you begin, make sure all these files are in proper order
+# HOW TO :
 
-    i.e 
+Before you begin, make sure all these files are in proper order
+ 
         --code
             --Mel
                 --BannerSlider
