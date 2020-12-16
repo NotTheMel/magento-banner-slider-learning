@@ -7,8 +7,13 @@
         "magento/framework": "*",
         "php": "~7.2.0||~7.3.0"
     },
+    "authors": [
+        {
+            "name": "Mel"
+        }
+    ],
     "license": [
-        "Open SOftware License (OSL)"
+        "Open Software License (OSL)"
     ],
     "autoload": {
         "files": [
